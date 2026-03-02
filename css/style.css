@@ -33,7 +33,6 @@ body {
 .container .card {
   border-radius: 10px;
   width: 90%;
-  background: hsl(0, 0%, 100%);
   color: hsl(212, 21%, 14%);
 }
 .container .card img {
@@ -42,6 +41,7 @@ body {
   border-top-right-radius: 10px;
 }
 .container .card .card-container {
+  background: hsl(0, 0%, 100%);
   padding: 18px;
 }
 .container .card h2 {
@@ -95,11 +95,25 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1300px) {
   .container {
     width: 1440px;
   }
   .container .card {
-    width: 30%;
+    width: 60%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background: hsl(0, 0%, 100%);
+  }
+  .container .card img {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
+  }
+  .container .card .card-container {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }/*# sourceMappingURL=style.css.map */
