@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+// Montserrat weights : 500, 700
+// Fraunces weights 700
+
+
+// Colors
+$green500: hsl(158, 36%, 37%);
+$green700: hsl(158, 42%, 18%);
+$black: hsl(212, 21%, 14%);
+$grey: hsl(228, 12%, 48%);
+$cream: hsl(30, 38%, 92%);
+$white: hsl(0, 0%, 100%);
+
+// Typography
+p{
+    font-size: 14px;
+}
+
+
+body{
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(13, 13, 13);
+    color: white;
+}
+
+.attribution{
+    position: fixed;
+    bottom: 15px;
+    right: 0;
+    color: $white;
+}

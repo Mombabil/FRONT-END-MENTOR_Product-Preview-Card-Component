@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+p {
+  font-size: 14px;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: rgb(13, 13, 13);
+  color: white;
+}
+
+.attribution {
+  position: fixed;
+  bottom: 15px;
+  right: 0;
+  color: hsl(0, 0%, 100%);
+}
+
+.container {
+  width: 375px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: hsl(30, 38%, 92%);
+  min-height: 100vh;
+}
+.container .card {
+  border-radius: 10px;
+  width: 90%;
+  background: hsl(0, 0%, 100%);
+  color: hsl(212, 21%, 14%);
+}
+.container .card img {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.container .card .card-container {
+  padding: 18px;
+}
+.container .card h2 {
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  color: hsl(228, 12%, 48%);
+}
+.container .card h1 {
+  font-family: "Fraunces", serif;
+}
+.container .card p {
+  color: hsl(228, 12%, 48%);
+}
+.container .card .card-price {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.container .card .card-price .current-price {
+  color: hsl(158, 36%, 37%);
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 2em;
+}
+.container .card .card-price .old-price {
+  text-decoration: line-through;
+  padding-left: 12px;
+  color: hsl(228, 12%, 48%);
+}
+.container .card button {
+  border: none;
+  width: 100%;
+  background: hsl(158, 36%, 37%);
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  font-size: 0.9em;
+  border-radius: 10px;
+}
+.container .card button:hover {
+  background: hsl(158, 42%, 18%);
+  cursor: pointer;
+}
+.container .card button span img {
+  width: 20px;
+  padding-right: 8px;
+  font-family: "Montserrat", sans-serif;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 1440px;
+  }
+  .container .card {
+    width: 30%;
+  }
+}/*# sourceMappingURL=style.css.map */
